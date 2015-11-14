@@ -1,0 +1,296 @@
+
+/*rules that apply to entire file */
+html {
+	width: 100%;
+	height: 100%; 
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	height: 100%; 
+}
+
+
+body p {
+	text-align: center;
+	font-weight: bold;
+}
+
+a {
+	color: white;
+	font-size: 150%;
+	text-decoration: none;
+}
+
+h2 {
+	color: black;
+}
+
+li {
+	color: black;
+}
+
+a:hover {
+	color: fuchsia;
+}
+
+div {
+	border-radius: 21px;
+	background-color: skyblue;
+	border: 4px solid black;
+	opacity: 0.9;
+}
+
+
+.wrapper {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border: hidden;
+	background-color: white;
+} 
+
+
+/* navigation menu */ 
+nav {
+	position: fixed;
+	width: 100%;
+	background-color: mediumseagreen;
+	height: 4em;
+	z-index: 10;
+}
+
+.nav_menu li {
+	list-style-type: none;
+	padding: 4px;
+	float: left;
+	overflow: hidden;
+	padding: 7px;
+} 
+
+nav a {
+	color: whitesmoke;
+	font-size: 150%;
+	text-decoration: none;
+}
+
+.nav_menu a:link {
+	width:60px;
+	text-align: center;
+
+} 
+
+/*homepage link*/ 
+#homepage {
+	float: right; 
+	font-weight: normal;
+	margin-right: 30px;
+	margin-top: 10px;
+	border: none;
+}	
+#homepage:hover {
+	color: fuchsia;
+} 
+
+/* centerpiece */ 
+.centerpiece {
+	position: fixed; /* have to have this to do top, bottom, left, right, etc. */
+	border-radius: 21px;
+	top: 40%;
+	left: 36%;
+	margin: 0 auto; /*pretty sure this does nothing */
+	height: 120px;
+	width: 300px;
+	opacity: 0.9;
+
+}
+
+.centerpiece p {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center; 
+
+}
+
+.centerpiece span {
+	color: crimson;
+}
+
+#hello {
+	font-size: 150%;
+}
+
+/* background image */
+.background {
+	position: fixed;
+	background-image: url("http://i.imgur.com/MWJvfTk.jpg");
+	background-size: cover;
+	height: 85%;
+	width: inherit;
+	opacity: 0.95;
+
+}	
+
+/*About me Page */
+#selfie {
+	position: fixed;
+	top: 15%;
+	left: 43%;
+	border-radius: 30px;
+	margin: 0 auto;
+	opacity: 0.9;
+	border: 4px solid white;
+	width: 135px; 
+}
+
+/*div below my picture */
+.who_am_i {
+	position: fixed;
+	top: 50%;
+	left: 39%;
+	height: 200px;
+	width: 250px;
+	padding-bottom: 20px;
+}
+
+.who_am_i hr {
+	width: 40%;
+	color: white; 
+}
+
+.who_am_i p {
+	font-weight: bolder;
+}
+
+#UNC_CS {
+	margin-bottom: -9px;
+}
+
+
+#myName {
+	font-size: 1.7em;
+	text-shadow: 1px 1px 1px black;
+}
+
+/*Portfolio Page */
+#portfolio {
+	position: fixed;
+	opacity: 0.9;
+	top: 17%;
+	left: 20%;
+	padding: 0px 0px 20px 30px;
+
+}
+
+#portfolio h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+#portfolio p {
+	/* color: black; */
+	text-align: left;
+}
+
+#cgol {
+	color: black;
+	font-size: 100%;
+}
+
+#cgol:hover {
+	color: fuchsia;
+}
+
+/*Coursework Page */
+#courses {
+	position: fixed;
+	opacity: 0.9;
+	top: 30%;
+	left: 21%; 
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px 10px 20px 30px;
+
+}
+
+#courses h2 {
+	text-align: center;
+	margin: 5px;
+	text-decoration: underline;
+}
+
+/*Social Page */
+#social_media h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+#social_media {
+	position: fixed;
+	width: 60%;
+	opacity: 0.9;
+	top: 31%;
+	left: 19%;
+}
+#social_media a {
+	font-size: 130%;
+	text-align: center; 
+	color: black;
+}
+#social_media a:hover {
+	color: fuchsia;
+}
+
+/* bottom table */
+table {
+	position: fixed;
+	width: 100%;
+	height: 15%;
+	margin-top: -16px; 
+	top: 90%;
+	border-collapse: collapse;	
+	background-color: mediumseagreen;
+	color: white;	
+
+}
+
+td {
+	width: 33%;
+	border: thin solid deepskyblue;
+	text-align: center;
+}
+
+td h3 {
+	text-align: center;
+	display: inline;
+}  
+
+td a {
+	font-size: 100%;
+	font-weight: bolder;
+}
+
+td p {
+	display: inline;
+	padding: 0px;
+	font-size: 14px;
+}
+
+h4 a:hover {
+	color: fuchsia;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
