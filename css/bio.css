@@ -1,0 +1,60 @@
+p {
+	color: white;
+	font-family: Georgia, serif;
+}
+
+a {
+	color: aqua;
+	text-decoration: none;
+	font-size: 26px;
+}
+
+a:hover {
+	color: fuchsia;
+}
+
+
+body {
+	height: 100%;
+	width: 100%;
+	font-family: Roboto;
+}
+
+/*content half */
+.content {
+	position: fixed;
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: black;
+	clear: left;
+}
+
+.content_container {
+	position: relative;
+	margin-left: 40px;
+}
+
+.content h1 {
+	color: aqua;
+}
+
+.bio {
+	width: 90%;
+	font-size: 15px;
+}
+
+/*photo */
+.photo {
+	left: 50%;
+	position: fixed;
+	width: 50%;
+	height: 100%;
+	
+}
+
+.photo img {
+	left: 50%;
+	width: 100%;
+	height: 100%;
+}
