@@ -1,2 +1,2 @@
 # personal_website
-My personal website, built from scratch using HTML and CSS
+My personal website, built from scratch using HTML, CSS, JS, & JQuery
