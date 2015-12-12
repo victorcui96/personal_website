@@ -44,6 +44,18 @@ body {
 	font-size: 15px;
 }
 
+#msgGenerator span {
+	color: aqua;
+}
+
+#randomMsg {
+	color: lightcoral;
+}
+
+.bio b {
+	color: aqua;
+}
+
 /*photo */
 .photo {
 	left: 50%;
