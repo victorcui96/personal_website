@@ -99,8 +99,9 @@ nav a {
 	position: fixed; /* have to have this to do top, bottom, left, right, etc. */
 	border-radius: 21px;
 	top: 40%;
-	left: 36%;
-	margin: 0 auto; /*pretty sure this does nothing */
+	left: 38%;
+	margin-left: auto;
+	margin-right: auto;
 	height: 120px;
 	width: 300px;
 	opacity: 0.9;
