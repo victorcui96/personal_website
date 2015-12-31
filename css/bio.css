@@ -79,3 +79,58 @@ body {
 	width: 100%;
 	height: 100%;
 }
+
+/*responding to smaller (mobile) screen sizes */
+/*iPhone 4 */
+@media only screen and (min-width: 310px) and (min-height: 450px) {
+	h1, a {
+		font-size: 70%;
+	}
+
+	.content_container p {
+		font-size: 30%;
+	}
+}
+
+/*iPhone 5 */ 
+@media only screen and (min-width: 320px) and (min-height: 550px) {
+
+
+}
+
+/*iPhone 6 */
+@media only screen and (min-width: 350px) and (min-height: 600px) {
+	h1, a {
+		font-size: 80%;
+	}
+
+	.content_container p {
+		font-size: 60%;
+	}
+}
+
+/*iPhone 6 plus */
+@media only screen and (min-width: 410px) and (min-height: 730px) {
+	h1, a {
+		font-size: 90%;
+	}
+
+	.content_container p {
+		font-size: 70%;
+	}
+}
+
+/*laptops and beyond */
+@media all and (min-device-width: 1000px) and (min-device-height: 700px) {
+	h1 {
+		font-size: 140%;
+	}
+
+	a {
+		font-size: 120%;
+	}
+
+	.content_container p {
+		font-size: 100%;
+	}
+}
