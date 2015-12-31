@@ -36,12 +36,13 @@ body {
 	height: 100%;
 	float: left;
 	background-color: black;
-	clear: left;
+	
 }
+
 
 .content_container {
 	position: relative;
-	margin-left: 40px;
+	margin-left: 5%;
 }
 
 .content h1 {
