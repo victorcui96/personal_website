@@ -588,7 +588,12 @@ h4 a:hover {
 	.nav_menu a { 
 		font-size: 130%;
 	}
+	#UNC_2018 {
+		margin-top: 5%;
+	}
+
 	#hello {
+		padding: 0px;
 		font-size: 140%;
 	}
 	/*about me page */
@@ -606,9 +611,8 @@ h4 a:hover {
 	}
 
 	#UNC_CS, #engineer {
-		font-size: 100%;
+		font-size: 120%;
 	}
-
 	.who_am_i p {
 		font-size: 100%;
 		padding: 0px;
