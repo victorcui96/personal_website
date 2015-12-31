@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
 	var time = document.getElementById("time");
@@ -25,13 +24,13 @@ $(document).ready(function() {
 	else if (currHour >= 21 || currHour === 0) {
 		time.textContent = "Good night.";	
 		changeColor(time, "midnightblue");
+		unc.removeClass('neg_spacing');
 	}
 	else {
 		time.textContent = "Hello night owl.";	
 		changeColor(time, "mistyrose");
 		
 	}
-	unc.css("margin-top", "-15px");
 
 	function changeColor(el, newColor) {
 		el.style.color = newColor;
