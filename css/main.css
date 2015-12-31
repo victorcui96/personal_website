@@ -20,7 +20,7 @@ body p {
 
 a {
 	color: white;
-	font-size: 150%;
+	font-size: 140%;
 	text-decoration: none;
 }
 
@@ -41,11 +41,11 @@ div {
 	background-color: skyblue;
 	border: 4px solid black;
 	opacity: 0.9;
-}
+} 
 
 
 .wrapper {
-	position: relative;
+	/* position: relative; */
 	height: 100%;
 	width: 100%;
 	border: hidden;
@@ -64,7 +64,6 @@ nav {
 
 .nav_menu li {
 	list-style-type: none;
-	padding: 4px;
 	float: left;
 	overflow: hidden;
 	padding: 7px;
@@ -72,40 +71,35 @@ nav {
 
 nav a {
 	color: whitesmoke;
-	font-size: 150%;
+	font-size: 130%;
 	text-decoration: none;
 }
 
 .nav_menu a:link {
-	width:60px;
 	text-align: center;
-
 } 
 
 /*homepage link*/ 
 #homepage {
 	float: right; 
 	font-weight: normal;
-	margin-right: 30px;
-	margin-top: 10px;
+	margin-right: 2%;
+	margin-top: 1%;
 	border: none;
 }	
 #homepage:hover {
 	color: fuchsia;
 } 
 
+
 /* centerpiece */ 
 .centerpiece {
-	position: fixed; /* have to have this to do top, bottom, left, right, etc. */
-	border-radius: 21px;
+	position: relative; /* have to have this to do top, bottom, left, right, etc. */ 
 	top: 40%;
-	left: 38%;
+	height: 15%;
+	width: 27%;
 	margin-left: auto;
-	margin-right: auto;
-	height: 120px;
-	width: 300px;
-	opacity: 0.9;
-
+	margin-right: auto; 
 }
 
 .centerpiece p {
@@ -120,7 +114,7 @@ nav a {
 }
 
 #hello {
-	font-size: 150%;
+	font-size: 140%;
 }
 
 .neg_spacing {
@@ -132,7 +126,7 @@ nav a {
 	position: fixed;
 	background-image: url("http://i.imgur.com/MWJvfTk.jpg");
 	background-size: cover;
-	height: 88%;
+	height: 88%; 
 	width: inherit;
 	opacity: 0.95;
 	border-radius: none;
@@ -142,24 +136,26 @@ nav a {
 
 /*About me Page */
 #selfie {
-	position: fixed;
-	top: 15%;
-	left: 43%;
+	position: relative;
+	display: block;
+	top: 14%;
+	margin: 0 auto;
+	height: 30%; 
 	border-radius: 30px;
 	margin: 0 auto;
 	opacity: 0.9;
 	border: 4px solid white;
-	width: 135px; 
+	
 }
 
 /*div below my picture */
 .who_am_i {
-	position: fixed;
-	top: 50%;
-	left: 39%;
-	height: 200px;
-	width: 250px;
-	padding-bottom: 20px;
+	position: relative;
+	top: 18%;
+	margin: 0 auto;
+	height: 35%;
+	width: 20%;
+	
 }
 
 .who_am_i hr {
@@ -186,13 +182,13 @@ nav a {
 }
 
 
-
 /*Portfolio Page */
 #portfolio {
-	position: fixed;
+	position: relative;
 	opacity: 0.9;
-	top: 17%;
-	left: 20%;
+	top: 16%;
+	margin: 0 auto;
+	width: 50%;
 	padding: 0px 0px 30px 30px;
 
 }
@@ -219,10 +215,10 @@ nav a {
 
 /*Coursework Page */
 #courses {
-	position: fixed;
+	position: relative;
 	opacity: 0.9;
 	top: 30%;
-	left: 21%; 
+	width: 40%;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 10px 10px 20px 30px;
@@ -242,12 +238,13 @@ nav a {
 }
 
 #social_media {
-	position: fixed;
+	position: relative;
 	width: 60%;
 	opacity: 0.9;
 	top: 31%;
-	left: 19%;
+	margin: 0 auto;
 }
+
 #social_media a {
 	font-size: 130%;
 	text-align: center; 
@@ -295,6 +292,417 @@ td p {
 h4 a:hover {
 	color: fuchsia;
 }
+
+/*responding to smaller (mobile) screen sizes */
+/*iPhone 4 */
+@media only screen and (min-width: 310px) and (min-height: 450px) {
+
+	.nav_menu a, #homepage { 
+		font-size: 60%;
+	}
+	
+	#homepage {
+		margin-top: 2.5%;
+	}
+
+	#hello {
+		font-size: 70%;
+	}
+
+	/*about me page */
+	#selfie {
+		top: 16%;
+		height: 25%;
+	}
+
+	.who_am_i {
+		width: 35%;
+	}
+
+	#myName {
+		font-size: 90%;
+	}
+
+	#UNC_CS, #engineer {
+		font-size: 60%;
+	}
+
+	.who_am_i p {
+		font-size: 60%;
+		padding-top: 3%;
+	}
+	
+	/*portfolio page */
+	#portfolio h2, p, li {
+		font-size: 50%;
+	}
+
+	#portfolio {
+		padding-right: 4%;
+	}
+
+	/*courses page */
+	#courses h2 {
+		font-size: 60%;
+	}
+
+	/*social media page*/
+	#social_media h2 {
+		font-size: 80%;
+	}
+	#social_media img {
+		height: 15px;
+		width: 15px;
+	}
+	
+	.centerpiece {
+		padding-top: 3%;
+		 width: 30%; 
+	}
+	
+	.centerpiece p {
+		margin: 5px;
+		font-size: 60%;
+	}
+
+	table h3 {
+		font-size: 50%;
+	}
+
+	table p {
+		font-size: 50%;
+	}
+
+	table a {
+		font-size: 50%;
+	}
+
+}
+
+/*iPhone 5 */ 
+@media only screen and (min-width: 320px) and (min-height: 550px) {
+	.nav_menu a, #homepage { 
+		font-size: 120%;
+	}
+
+	/*about me page */
+	.who_am_i {
+		height: 30%;
+	}
+	
+	#homepage {
+		margin-top: 2.5%;
+	}
+
+	#hello {
+		font-size: 70%;
+	}
+	
+	/*portfolio page */
+	#portfolio h2, p, li {
+		font-size: 50%;
+	}
+
+	#portfolio {
+		padding-right: 4%;
+	}
+
+	/*courses page */
+	#courses h2 {
+		font-size: 60%;
+	}
+
+	/*social media page*/
+	#social_media h2 {
+		font-size: 75%;
+	}
+
+	#social_media img {
+		height: 18px;
+		width: 18px;
+	}
+	
+	.centerpiece {
+		padding-top: 3%;
+		 width: 30%; 
+	}
+	
+	.centerpiece p {
+		margin: 5px;
+		font-size: 60%;
+	}
+
+	table h3 {
+		font-size: 60%;
+	}
+
+	table p {
+		font-size: 60%;
+	}
+
+	table a {
+		font-size: 60%;
+	}
+
+}
+
+/*iPhone 6 */
+@media only screen and (min-width: 350px) and (min-height: 600px) {
+	.nav_menu a, #homepage { 
+		font-size: 120%;
+	}
+	#hello {
+		font-size: 95%;
+	}
+
+	/*about me page */
+	.who_am_i {
+		height: 30%;
+	}
+	
+	#homepage {
+		margin-top: 2.5%;
+	}
+
+	#myName {
+		font-size: 100%;
+	}
+
+	#UNC_CS, #engineer {
+		font-size: 70%;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+
+	/*courses page */
+	#courses h2 {
+		font-size: 60%;
+	}
+
+	/*social media page*/
+	#social_media h2 {
+		font-size: 85%;
+	}
+
+	#social_media img {
+		height: 20px;
+		width: 20px;
+	}
+	
+	.centerpiece {
+		padding-top: 3%;
+		width: 40%;
+	}
+	
+	.centerpiece p {
+		margin: 5px;
+		font-size: 70%;
+	}
+
+	table h3 {
+		font-size: 70%;
+	}
+
+	table p {
+		font-size: 70%;
+	}
+
+	table a {
+		font-size: 70%;
+	}
+}	
+
+/*iPhone 6 plus */
+@media only screen and (min-width: 410px) and (min-height: 730px) {
+	.nav_menu a { 
+		font-size: 130%;
+	}
+	#hello {
+		font-size: 90%;
+	}
+
+
+	/*about me page */
+	.who_am_i {
+		height: 30%;
+	}
+
+	#myName {
+		font-size: 110%;
+	}
+
+	.who_am_i p {
+		font-size: 80%;
+	}
+	
+
+	#UNC_CS, #engineer {
+		font-size: 90%;
+		padding-left:5px;
+		padding-right:5px;
+	}
+
+
+	/*portfolio page */
+	#portfolio h2, p, li {
+		font-size: 60%;
+	}
+
+	/*courses page */
+	#courses h2 {
+		font-size: 60%;
+	}
+
+	/*social media page*/
+	#social_media h2 {
+		font-size: 85%;
+	}
+
+	#social_media img {
+		height: 20px;
+		width: 20px;
+	}
+	
+	
+	.centerpiece p {
+		font-size: 80%;
+	}
+
+	table h3 {
+		font-size: 80%;
+	}
+
+	table p {
+		font-size: 80%;
+	}
+
+	table a {
+		font-size: 80%;
+	}
+
+}	
+
+/*laptops and beyond */
+@media all and (min-device-width: 1000px) and (min-device-height: 700px) {
+	.nav_menu a { 
+		font-size: 130%;
+	}
+	#hello {
+		font-size: 140%;
+	}
+	/*about me page */
+	#selfie {
+		top: 16%;
+		height: 25%;
+	}
+
+	.who_am_i {
+		width: 35%;
+	}
+
+	#myName {
+		font-size: 150%;
+	}
+
+	#UNC_CS, #engineer {
+		font-size: 100%;
+	}
+
+	.who_am_i p {
+		font-size: 100%;
+		padding: 0px;
+
+	}
+	
+
+
+	#homepage {
+		margin-top: 1%;
+	}
+
+	/*portfolio page */
+	#portfolio h2, p, li {
+		font-size: 100%;
+	}
+
+	/*courses page */
+	#courses h2 {
+		font-size: 100%;
+	}
+
+	/*social media page*/
+	#social_media h2 {
+		font-size: 140%;
+	}
+
+	#social_media img {
+		height: 25px;
+		width: 25px;
+	}
+	
+	.centerpiece p {
+		font-size: 100%;
+	}
+
+	table h3 {
+		font-size: 100%;
+	}
+
+	table p {
+		font-size: 100%;
+	}
+
+	table a {
+		font-size: 100%;
+	} 
+
+	#homepage {
+		font-size: 140%;
+	}
+	
+}
+
+/* @media all and (max-height: 450px) {
+	#hello {
+		font-size: 85%;
+	}
+	.centerpiece p {
+		margin: 5px;
+		font-size: 85%;
+	}
+}
+
+@media all and (min-height: 450px) and (max-height: 480px) {
+	#hello {
+		font-size: 90%;
+	} 
+
+	.centerpiece p {
+		font-size: 90%;
+		margin: 5px;
+	}
+}
+
+@media all and (min-height: 480px) and (max-height: 670px) {
+
+	#hello {
+		font-size: 95%;
+	} 
+
+	.centerpiece p {
+		font-size: 95%;
+		margin: 15px;
+	}
+
+	/* .centerpiece {
+		padding: 15px;
+	} 
+
+	
+} */ 
+
+
 
 
 
